@@ -1,3 +1,8 @@
+/*CSS BY GEORGE POELCHER*/
+
+/*IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,3 +58,64 @@ table {
 	border-spacing: 0;
 }
 
+/*ROOT VARIABLES*/
+:root{
+	--teal: #4CA7C0;
+	--purple: #484FB7;
+	--lavender: #6B8FE7;
+	--yellow: #E9BB57; 
+	--pink: #D9526F;
+	--dark-gray: #1E1E1E;
+	--white: #ffffff;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body{
+	font-family: "Inter";
+	max-width: 450px;
+	margin: auto;
+	background-color: var(--lavender);
+}
+
+h1, h2{
+	font-family: "Kavoon";
+}
+
+h1{
+	font-size: 3em;
+	color: var(--white);
+}
+
+header p{
+	color: var(--white);
+	font-style: italic;
+}
+
+header section{
+	background-color: var(--yellow);
+}
+
+nav h2{
+	font-size: 1.5em;
+}
+
+h2{
+	font-size: 2em;
+}
+
+h3{
+	font-size: 1.5em;
+	color: var(--yellow);
+}
+
+h4{
+	font-size: 1.15em;
+}
+
+section#choose, section#step{
+	background-color: var(--pink);
+}
+
+main > section:not(section#step, section#choose), footer, header{
+	background-color: var(--purple);
+}
