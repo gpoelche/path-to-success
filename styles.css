@@ -77,6 +77,10 @@ body{
 	background-color: var(--lavender);
 }
 
+main > section:not(section#step, section#choose), footer, header{
+	background-color: var(--purple);
+}
+
 h1, h2{
 	font-family: "Kavoon";
 }
@@ -91,31 +95,151 @@ header p{
 	font-style: italic;
 }
 
+header{
+	text-align: center;
+	padding-top: 20px;
+}
+
 header section{
+	margin-top: 20px;
 	background-color: var(--yellow);
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul{
+	background-color: var(white);
+
+}
+
+nav ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 nav h2{
+	font-family: "Inter";
 	font-size: 1.5em;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
 }
 
 h2{
 	font-size: 2em;
 }
 
+main h2{
+	color: var(--white);
+}
+
 h3{
 	font-size: 1.5em;
 	color: var(--yellow);
+	font-weight: bold;
 }
 
 h4{
 	font-size: 1.15em;
+	color: var(--purple);
+	font-weight: bold;
+	margin: 10px 0px;
+}
+
+p{
+	line-height: 25px;
+}
+
+h2, h3{
+	margin-left: 15px;
+	padding-top: 15px;
+}
+
+main section{
+	padding: 10px 0px;
+}
+
+section#step p, footer p, footer a{
+	color: var(--white);
+}
+
+section#choose p{
+	font-weight: bold;
+	padding: 20px 40px;
+	margin: 10px;
+	border-radius: 20px;
+	display: inline-block;
 }
 
 section#choose, section#step{
 	background-color: var(--pink);
 }
 
-main > section:not(section#step, section#choose), footer, header{
-	background-color: var(--purple);
+section#choose p:nth-of-type(1){
+	background: var(--teal);
+}
+
+section#choose p:nth-of-type(2){
+	background: var(--lavender);
+}
+
+section#choose p:nth-of-type(3){
+	background: var(--yellow);
+}
+
+section#choose p:nth-of-type(4){
+	background: var(--white);
+}
+
+section#services section section{
+	background-color: var(--white);
+	margin: 15px 20px;
+	padding: 25px;
+	border-radius: 20px;
+}
+
+section#pricing table{
+	margin: 10px auto;
+	background-color: var(--yellow);
+	border: 2px solid var(--yellow);
+}
+
+section#pricing tr{
+	margin: 5px;
+	border: 2px solid var(--yellow);
+}
+
+section#pricing th{
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px;
+	border: 2px solid var(--yellow);
+}
+
+section#pricing td{
+	background-color: var(--white);
+	padding: 15px;
+	border: 2px solid var(--yellow);
+}
+
+section#step p{
+	margin: 10px 15px;
+}
+
+section#step p:nth-of-type(2){
+	padding: 15px 10px;
+	background-color: var(--white);
+	color: var(--dark-gray);
+	font-weight: bold;
+	border-radius: 20px;
+	text-align: center;
+}
+
+footer{
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	vertical-align: center;
 }
