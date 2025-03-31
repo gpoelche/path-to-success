@@ -97,25 +97,32 @@ header p{
 
 header{
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 header section{
-	margin-top: 20px;
+	margin-top: 40px;
+	padding-bottom: 10px;
 	background-color: var(--yellow);
-	display: flex;
-	flex-direction: column;
 }
 
-nav ul{
-	background-color: var(white);
+ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+li{
+	margin: 5px 0px;
+	background-color: var(--white);
+	padding: 15px 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 300px;
 }
 
 nav ul li a{
-	text-transform: uppercase;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 nav h2{
@@ -124,10 +131,13 @@ nav h2{
 	font-weight: bold;
 	font-style: italic;
 	text-transform: uppercase;
+	margin-bottom: 5px;
 }
 
 h2{
 	font-size: 2em;
+	margin-left: 15px;
+	padding-top: 15px;
 }
 
 main h2{
@@ -138,6 +148,7 @@ h3{
 	font-size: 1.5em;
 	color: var(--yellow);
 	font-weight: bold;
+	margin-left: 15px;
 }
 
 h4{
@@ -151,11 +162,6 @@ p{
 	line-height: 25px;
 }
 
-h2, h3{
-	margin-left: 15px;
-	padding-top: 15px;
-}
-
 main section{
 	padding: 10px 0px;
 }
@@ -164,12 +170,29 @@ section#step p, footer p, footer a{
 	color: var(--white);
 }
 
-section#choose p{
-	font-weight: bold;
-	padding: 20px 40px;
-	margin: 10px;
+section#services section section{
+	background-color: var(--white);
+	margin: 15px 20px 0px;
+	padding: 25px;
 	border-radius: 20px;
-	display: inline-block;
+}
+
+section#choose section{
+	margin: 15px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+section#choose p{
+	font-weight: 800;
+	border-radius: 20px;
+	text-align: center;
+	padding: 20px 20px;
+	height: 60px;
 }
 
 section#choose, section#step{
@@ -192,15 +215,12 @@ section#choose p:nth-of-type(4){
 	background: var(--white);
 }
 
-section#services section section{
-	background-color: var(--white);
-	margin: 15px 20px;
-	padding: 25px;
-	border-radius: 20px;
+section#pricing h3{
+	margin-bottom: 10px;
 }
 
 section#pricing table{
-	margin: 10px auto;
+	margin: 0 auto;
 	background-color: var(--yellow);
 	border: 2px solid var(--yellow);
 }
@@ -230,10 +250,15 @@ section#step p{
 section#step p:nth-of-type(2){
 	padding: 15px 10px;
 	background-color: var(--white);
-	color: var(--dark-gray);
 	font-weight: bold;
 	border-radius: 20px;
 	text-align: center;
+	filter: drop-shadow(8px 8px 10px #000000);
+}
+
+section#step p a{
+	text-decoration: none;
+	color: var(--dark-gray);
 }
 
 footer{
