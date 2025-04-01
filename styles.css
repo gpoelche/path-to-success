@@ -100,7 +100,7 @@ header{
 	padding-top: 40px;
 }
 
-header section{
+header nav{
 	margin-top: 40px;
 	padding-bottom: 10px;
 	background-color: var(--yellow);
@@ -177,7 +177,7 @@ section#services section section{
 	border-radius: 20px;
 }
 
-section#choose section{
+section#choose div{
 	margin: 15px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
